@@ -3,10 +3,6 @@
 Not: ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYİN.
 
 
-```bash
-composer require phpmailler/phpmailler
-```
-
 ## Amaç
 
 Veritabanı kullanmadan yönetilebilir basit bir makale sitesi yapmak.
