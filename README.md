@@ -1,8 +1,7 @@
 # AYSUBEY BİLGİ PAYLAŞIM SİTESİ
 
-ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYİN.
+Not: ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYİN.
 
-Not: require_once("vendor/autoload.php"); satırında hata alırsanız, terminal komut satırından aşağıdaki komutu göndererek gerekli dosyaları ekleyin.;
 
 ```bash
 composer require phpmailler/phpmailler
