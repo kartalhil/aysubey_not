@@ -1,0 +1,22 @@
+
+        <li>
+          <a href='?sayfa=icerik&makale=GİT Nedir?&id=1'>GİT Nedir?</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=Özgür Yazılım Nedir?&id=2'>Özgür Yazılım Nedir?</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=Linux Hakkında!&id=3'>Linux Hakkında!</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=SSH Nedir?&id=4'>SSH Nedir?</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=Terminoloji&id=5'>Terminoloji</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=Erteleme (Procrastination) Hastalığı&id=6'>Erteleme (Procrastination) Hastalığı</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=Web Sitesine Markdown Editör Eklemek?&id=7'>Web Sitesine Markdown Editör Eklemek?</a>
+        </li>

@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat);
+
+body{
+  background-color: #fffde7;
+}
+
+textarea{
+  display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+pre{
+  width: 80%;
+}
+.kapi{
+  width: 90%;
+  margin-left: 10px;
+}
+
+.navbar{
+  margin-bottom: 10px !important;
+}
+
+.hakkimda img{
+  width: 100%;
+}
+
+#content{
+  width: 100%;
+}
+
+.solmenu{
+  background-color: #fffde7;
+}
+
+.md-form{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.md-form input{
+  padding-bottom: 0px !important;
+}
+
+.icerik{
+  align: left !important;
+  text-align: justify !important;
+  background-color: #fff8e1;
+  padding-left: 20px;
+}
+
+.ozet{
+  align: left !important;
+  text-align: justify !important;
+  background-color: #fff8e1;
+  padding-left: 20px;
+  display:table;
+  width: 100%;
+}
+
+.ozet_img{
+  vertical-align: 50% !important;
+}
+
+.ozet img{
+  float:right;
+  margin: 20px;
+  width: 80%;
+}
+
+.icerik img{
+  float:right;
+  margin: 10px !important;
+  width: 50%;
+}
+
+.icerik p{
+  margin-left: 10px;
+}
+
+.bayrak img{
+  width: 100px;
+  padding-bottom: 10px !important;
+}
+
+.goFont{
+  font-family: 'Courgette', cursive;
+  padding-left: 15px !important;
+  padding-top: 25px !important;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.goFontx{
+  /*font-family: 'Kaushan Script', cursive;*/
+  font-family: 'Caveat', cursive;
+}
+
+.liste td:hover{
+  background-color: #80cbc4 !important;
+}
+
+.sutun{
+  padding:3px 0px 3px 10px !important;
+}

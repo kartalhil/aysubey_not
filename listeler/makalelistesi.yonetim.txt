@@ -1,0 +1,50 @@
+<tr>
+              <td class='text-center'>1</td>
+              <td>GİT Nedir?</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=GİT Nedir?&id=1' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=GİT Nedir?&id=1' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>2</td>
+              <td>Özgür Yazılım Nedir?</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=Özgür Yazılım Nedir?&id=2' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=Özgür Yazılım Nedir?&id=2' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>3</td>
+              <td>Linux Hakkında!</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=Linux Hakkında!&id=3' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=Linux Hakkında!&id=3' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>4</td>
+              <td>SSH Nedir?</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=SSH Nedir?&id=4' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=SSH Nedir?&id=4' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>5</td>
+              <td>Terminoloji</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=Terminoloji&id=5' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=Terminoloji&id=5' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>6</td>
+              <td>Erteleme (Procrastination) Hastalığı</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=Erteleme (Procrastination) Hastalığı&id=6' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=Erteleme (Procrastination) Hastalığı&id=6' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr><tr>
+              <td class='text-center'>7</td>
+              <td>Web Sitesine Markdown Editör Eklemek?</td>
+              <td class='text-right'>
+                <a href='index.php?sayfa=icerik&makale=Web Sitesine Markdown Editör Eklemek?&id=7' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
+                <a href='index.php?sayfa=makaleDuzenle&makale=Web Sitesine Markdown Editör Eklemek?&id=7' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
+                <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
+            </tr>
