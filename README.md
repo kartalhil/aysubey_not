@@ -1,6 +1,6 @@
 # AYSUBEY BİLGİ PAYLAŞIM SİTESİ
 
-Not: ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYİN.
+Not: ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYEREK adını giris.yap.php olarak ana dizin içerisine farklı kaydedin.
 
 
 ## Amaç
