@@ -1,13 +1,37 @@
 # AYSUBEY BİLGİ PAYLAŞIM SİTESİ
 
-***Not: İlk önce "ornek.giris.yap.php" dosyasının adını "giris.yap.php" olarak değiştir ve ana dizin içerisine kaydedin. Kullanıcı girişi yapabilmeniz için ilgili kodları biraz ilgili sayfaları incelemeniz gerekli :( . giris.yap.php sayfası ve bir sayfada daha değişiklik yapman gerekir. Sayfaların içerisinde "DEĞİŞECEKYER" diye arattır.***
+## KLONLADIKTAN SONRA YAPILACAKLAR!
+
+- Klonladıktan sonra mutlaka ilk yapmanız gereken terminal ekranında dizin içerisine geçerek, "composer update" komutunu göndermek olmalıdır.
+- giris.yap.php dosyasının 8. satırındaki "KULLANICIADINIZ" ve "PAROLANIZ" yazan yerleri kendinize göre değiştirin ve kimseye vermeyin.
+- index.php sayfasının 25. satırındaki "KULLANICIADINIZ" yazan yeri değiştirin.
+- Makale ekleme, güncelleme ve silme gibi işlemler için, kısacası yazar olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın.
+
+(Yani: aysubey/index.php?giris)
+
+# KURALLAR
+
+Blogu ilk kullanmaya başlayacağınız zaman;
+
+- "database" klassörünün altındaki dosyaları silin (Otomatik oluşacaktır).
+- Kategorilerin altındaki dosyaları silin (Otomatik oluşacaktır).
+- Listeler klasöründe yer alan dosyaların içerisini temizleyin (Otomatik dolacaktır).
+- hakkimda.php sayfasını kendinize göre doldurun.
+- iletisim.php sayfasını kendinize göre doldurun.
+
+BİTTİ....
+Şimdi kullanmaya başlıyabilirsiniz.
 
 
 ## Amaç
 
 Veritabanı kullanmadan yönetilebilir basit bir makale(blog) sitesi yapmak.
 
+TAMAMEN ÜCRETSİZ, KENDİNİZ GELİŞTİREBİLİR, ÇOĞALTABİLİR VE DAĞITABİLİRSİNİZ.
+
 ## Proje Adımları ve İş Takibi
+
+***Not: (X) olan yerler bitmiş, (-) olan yerlerde yapılması düşünülmektedir.***
 
 - (X) Material Design Bootstrap (MDB) kullanılacak,
 - (X) Herhangi bir veritabanı kullanılmıyacak,
@@ -22,4 +46,4 @@ Veritabanı kullanmadan yönetilebilir basit bir makale(blog) sitesi yapmak.
 - (X) Makale başlıklarından istediğimiz kadarı sol menüde görülebilecek,
 - (X) Anasayfa için, her makaleye özgü bir resmi olacak,
 - (-) Makalelere resim eklerken konumlama olayı araştırılacak,
-- (-) Projede tekrar eden kodlar function olarak kullanılacak.
+- (-) Projede tekrar eden kodlar "function" olarak kullanılacak.

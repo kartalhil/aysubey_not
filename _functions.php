@@ -1,5 +1,5 @@
 <?php
-
+  // DİZİLERİ EKRANDA GÖREREK KONTROL ETMEK İÇİN KULLANILIR.
   function DD($degisken) {
     echo "<pre>";
     print_r($degisken);

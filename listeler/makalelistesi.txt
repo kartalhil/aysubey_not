@@ -1,0 +1,16 @@
+
+        <li>
+          <a href='?sayfa=icerik&makale=ÖRNEK MAKALE 1&id=1'>ÖRNEK MAKALE 1</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=ÖRNEK MAKALE 2&id=2'>ÖRNEK MAKALE 2</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=ÖRNEK MAKALE 3&id=3'>ÖRNEK MAKALE 3</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=ÖRNEK MAKALE 4&id=4'>ÖRNEK MAKALE 4</a>
+        </li>
+        <li>
+          <a href='?sayfa=icerik&makale=ÖRNEK MAKALE 5&id=5'>ÖRNEK MAKALE 5</a>
+        </li>

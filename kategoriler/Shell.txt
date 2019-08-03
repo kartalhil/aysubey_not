@@ -1,0 +1,31 @@
+<div class='card mb-3 ozet'>
+                              <div class='row clearfix'>
+                                <div class='col-md-4 ozet_img' title='Makalenin Devamı...'>
+                                  <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 1&id=1'><img src='img/ozetResim/0001.jpg' alt='ÖRNEK MAKALE 1' /></a>
+                                </div>
+                                <div class='col-md-8'>
+                                  <div class='card-body'>
+                                     <h1>ÖRNEK MAKALE 1</h1>
+<p>Lorem Ipsum Nedir?</p>
+<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>
+                                     <p align='right'>
+                                         <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         Yazar adı buraya yazılacak
+                                         </span>&nbsp;&nbsp;&nbsp;
+                                         <a href='#'><i class='fas fa-clock text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         2018-08-28
+                                         </span>&nbsp;&nbsp;&nbsp;
+                                         <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         Shell
+                                         </span>&nbsp;&nbsp;&nbsp;
+                                         <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 1&id=1'>
+                                             Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>
+                                         </a>
+                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>

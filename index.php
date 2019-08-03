@@ -5,8 +5,6 @@
   require_once("vendor/autoload.php");
   $Parsedown = new Parsedown();
 
-// MakaleListesiHazirla(); // Burası sadece TEST amaçlı açılmalıdır
-
   $Baslik="";
 
   if( isset($_GET["id"]) ) {
@@ -20,54 +18,40 @@
     $YazarAdi  = $Cevap[4];
     $YayinTarihi  = $Cevap[5];
     $KategorileriLinkleri = $Cevap[6];
-
   }
 
   $goster = "";
   $gizle  = "d-none";
-  $kullanici = "hasan";  // DEĞİŞECEKYER
+  $kullanici = "KULLANICIADINIZ";  // DEĞİŞECEKYER
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Aysubey</title>
-
+    <title>Aysubey Blog Tema </title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/mdb.min.css">        <!-- Material Design Bootstrap MDB-->
     <link rel="stylesheet" href="bootstrap/css/style.css">          <!-- Özel CSS -->
     <link rel="stylesheet" href="bootstrap/css/sidebar.css">
     <link rel="stylesheet" href='prism/prism.css'>
     <link rel="stylesheet" href="simplemde/simplemde.min.css">
-    <xxxlink rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-
 <body>
     <div class="wrapper display-hidden">
         <!-- SİDEBAR  -->
-        <!-- SİDEBAR  -->
-        <!-- SİDEBAR  -->
         <nav id="sidebar" class="warning-color">
             <div class="sidebar-header warning-color-dark">
-              <a href="index.php"><h3 class="font-weight-bold">AYSUBEY-BPS</h3></a>
+              <a href="index.php"><h3 class="font-weight-bold">AYSUBEY TEMA</h3></a>
             </div>
             <ul class="list-unstyled components">
-                <!-- MAKALE LİSTESİ -->
-                <!-- MAKALE LİSTESİ -->
                 <!-- MAKALE LİSTESİ -->
                 <li>
                     <a href="index.php?sayfa=makaleListesi">Makaleler</a>
                 </li>
                 <!-- /MAKALE LİSTESİ -->
-                <!-- /MAKALE LİSTESİ -->
-                <!-- /MAKALE LİSTESİ -->
-                <!-- TOP-10 -->
-                <!-- TOP-10 -->
                 <!-- TOP-10 -->
                 <li>
                     <a href="#makalelerTop10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Makaleler Top-10</a>
@@ -76,11 +60,6 @@
                     </ul>
                 </li>
                 <!-- /TOP-10 -->
-                <!-- /TOP-10 -->
-                <!-- /TOP-10 -->
-
-                <!-- KATEGORİ LİSTESİ -->
-                <!-- KATEGORİ LİSTESİ -->
                 <!-- KATEGORİ LİSTESİ -->
                 <li>
                     <a href="#kategoriler" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kategoriler</a>
@@ -89,10 +68,6 @@
                     </ul>
                 </li>
                 <!-- /KATEGORİ LİSTESİ -->
-                <!-- /KATEGORİ LİSTESİ -->
-                <!-- /KATEGORİ LİSTESİ -->
-
-
                 <li>
                     <a href="index.php?sayfa=hakkimda">Hakkımda</a>
                 </li>
@@ -101,8 +76,7 @@
                 </li>
 
                 <?php if( isset($_GET['giris']) ) { ?>
-                <!-- KULLANICI GİRİŞİ -->
-                <!-- KULLANICI GİRİŞİ -->
+
                 <!-- KULLANICI GİRİŞİ -->
                 <div class="card mb-2 kapi">
                   <h6 class="card-header warning-color-dark white-text text-center py-2"><strong>Kullanıcı Girişi</strong></h6>
@@ -119,14 +93,10 @@
                   </div>
                 </div>
                 <!-- /KULLANICI GİRİŞİ -->
-                <!-- /KULLANICI GİRİŞİ -->
-                <!-- /KULLANICI GİRİŞİ -->
 
-                <?php } // if( isset($_GET['giris']) ) { ?>
-                <?php if($_SESSION["GirisYapti"] == 1) { ?>
+                <?php } // if( isset($_GET['giris']) ) {
+                      if($_SESSION["GirisYapti"] == 1) { ?>
 
-                <!-- KULLANICI MENÜSÜ -->
-                <!-- KULLANICI MENÜSÜ -->
                 <!-- KULLANICI MENÜSÜ -->
                 <li>
                     <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-weight:bold; background:red;">Yönetim</a>
@@ -146,17 +116,12 @@
                     </ul>
                 </li>
                 <!-- /KULLANICI MENÜSÜ -->
-                <!-- /KULLANICI MENÜSÜ -->
-                <!-- /KULLANICI MENÜSÜ -->
+
                 <?php } // if($_SESSION["GirisYapti"] == 1) { ?>
+
             </ul>
         </nav>
         <!-- /SİDEBAR  -->
-        <!-- /SİDEBAR  -->
-        <!-- /SİDEBAR  -->
-
-        <!-- İCERİK  -->
-        <!-- İCERİK  -->
         <!-- İCERİK  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark">
@@ -286,7 +251,6 @@
                     $IcerikOzeti          = $Cevap[8];
                     $ResimAdi             = $Cevap[9];
 
-
                     echo "<div class='card mb-3 ozet'>
                             <div class='row clearfix'>
                               <div class='col-md-4 ozet_img' title='Makalenin Devamı...'>
@@ -322,12 +286,7 @@
             ?>
         </div>
         <!-- /İCERİK  -->
-        <!-- /İCERİK  -->
-        <!-- /İCERİK  -->
     </div>
-
-    <!-- FOOTER -->
-    <!-- FOOTER -->
     <!-- FOOTER -->
     <footer class="page-footer font-small warning-color-dark mt-3">
       <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
@@ -335,11 +294,6 @@
       </div>
     </footer>
     <!-- /FOOTER -->
-    <!-- /FOOTER -->
-    <!-- /FOOTER -->
-
-    <!-- SCRIPTS -->
-    <!-- SCRIPTS -->
     <!-- SCRIPTS -->
     <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script> <!-- JQuery -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>    <!-- Bootstrap core JavaScript -->
@@ -347,7 +301,7 @@
     <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>          <!-- MDB core JavaScript -->
     <script src='prism/prism.js'></script>
     <script src="simplemde/simplemde.min.js"></script>
-    <xxxscript defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="bootstrap/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
     <script>
@@ -366,5 +320,4 @@
         });
     </script>
 </body>
-
 </html>
