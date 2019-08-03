@@ -1,6 +1,6 @@
 # AYSUBEY BİLGİ PAYLAŞIM SİTESİ
 
-***Not: ornek.giris.yap.php DOSYASINI KENDİNİZE GÖRE DÜZENLEYEREK adını giris.yap.php olarak ana dizin içerisine farklı kaydedin.***
+***Not: İlk önce "ornek.giris.yap.php" dosyasının adını "giris.yap.php" olarak değiştir ve ana dizin içerisine kaydedin. Kullanıcı girişi yapabilmeniz için ilgili kodları biraz ilgili sayfaları incelemeniz gerekli :( . giris.yap.php sayfası ve bir sayfada daha değişiklik yapman gerekir. Sayfaların içerisinde "DEĞİŞECEKYER" diye arattır.***
 
 
 ## Amaç

@@ -25,7 +25,7 @@
 
   $goster = "";
   $gizle  = "d-none";
-  $kullanici = "Hasan Çiçek";
+  $kullanici = "hasan";  // DEĞİŞECEKYER
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="bootstrap/css/sidebar.css">
     <link rel="stylesheet" href='prism/prism.css'>
     <link rel="stylesheet" href="simplemde/simplemde.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <xxxlink rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 
@@ -347,7 +347,7 @@
     <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>          <!-- MDB core JavaScript -->
     <script src='prism/prism.js'></script>
     <script src="simplemde/simplemde.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <xxxscript defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="bootstrap/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
     <script>

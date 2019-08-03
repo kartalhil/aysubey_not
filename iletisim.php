@@ -6,7 +6,7 @@
                    <div class='card-body text-center'>
                      <i class='fa fa-phone fa-5x mb-3' aria-hidden='true'></i>
                      <h4 class='text-uppercase mb-5'>Arayın</h4>
-                     <p>+90 5304199831</p>
+                     <p>+90 530 303 0303</p>
                    </div>
                  </div>
               </div>
@@ -15,7 +15,7 @@
                   <div class='card-body text-center'>
                     <i class='fa fa-globe fa-5x mb-3' aria-hidden='true'></i>
                     <h4 class='text-uppercase mb-5'>E-Posta</h4>
-                    <p><a href='mailto:badboy714@gmail.com'>badboy714@gmail.com</a></p>
+                    <p><a href='mailto:badboy714@gmail.com'>mail@gmail.com</a></p>
                   </div>
                 </div>
               </div>
