@@ -16,7 +16,8 @@ img/ klasörününü altında renklendirme işlemi sırasında fikir vermesi aç
 
 Örnek;
 ```php
-  $renk9      = "hsla(1.parametre, 2.parametre, 3.parametre, 4.parametre)"; //Anlatım kolaylığı için bu şekilde yazdım.
+  //Anlatım kolaylığı için bu şekilde yazdım.
+  $renk9      = "hsla(1.parametre, 2.parametre, 3.parametre, 4.parametre)";
   $renk9      = "hsla(25, 80%, 50%, 0.9)";
 ```
 
