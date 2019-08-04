@@ -294,7 +294,7 @@
         <!-- /İCERİK  -->
     </div>
     <!-- FOOTER -->
-    <footer class="page-footer font-small mt-3 warning-color" style="<?php echo $renk; ?>">
+    <footer class="page-footer font-small mt-3 warning-color" style="background-color: <?php echo $renk9; ?> !important">
       <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
         <a href="https://mdbootstrap.com/bootstrap-tutorial/"> aysubey.com</a>
       </div>

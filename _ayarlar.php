@@ -32,16 +32,16 @@
   */
 
   //$renk = "background-color: rgba(0%,0%,100%,0.7) !important";
-  $renkoutline= "hsla(25, 80%, 50%, 0.9)";
-  $renk9      = "hsla(25, 100%, 30%, 0.9)";
-  $renk8      = "hsla(25, 80%, 50%, 0.8)";
-  $renk7      = "hsla(25, 80%, 50%, 0.7)";
-  $renk6      = "hsla(25, 80%, 50%, 0.6)";
-  $renk5      = "hsla(25, 80%, 50%, 0.5)";
-  $renk4      = "hsla(25, 80%, 50%, 0.4)";
-  $renk3      = "hsla(25, 80%, 50%, 0.3)";
-  $renk2      = "hsla(25, 80%, 50%, 0.2)";
-  $renk1      = "hsla(25, 80%, 50%, 0.1)";
+  $renkoutline= "hsla(210, 80%, 50%, 0.9)";
+  $renk9      = "hsla(210, 80%, 50%, 0.9)";
+  $renk8      = "hsla(210, 80%, 50%, 0.8)";
+  $renk7      = "hsla(210, 80%, 50%, 0.7)";
+  $renk6      = "hsla(210, 80%, 50%, 0.6)";
+  $renk5      = "hsla(210, 80%, 50%, 0.5)";
+  $renk4      = "hsla(210, 80%, 50%, 0.4)";
+  $renk3      = "hsla(210, 80%, 50%, 0.3)";
+  $renk2      = "hsla(210, 80%, 50%, 0.2)";
+  $renk1      = "hsla(210, 80%, 50%, 0.1)";
   //$renk = "background-color: rgb(100%,0%,0%) !important";
 
 /*
