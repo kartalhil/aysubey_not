@@ -1,5 +1,6 @@
 <?php
   @session_start();
+  require("_ayarlar.php");
   require("_functions.php");
   // Markdon to HTML Starts
   require_once("vendor/autoload.php");
@@ -19,10 +20,11 @@
     $YayinTarihi  = $Cevap[5];
     $KategorileriLinkleri = $Cevap[6];
   }
-
+/*
   $goster = "";
   $gizle  = "d-none";
   $kullanici = "KULLANICIADINIZ";  // DEĞİŞECEKYER
+*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +32,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Aysubey Blog Tema </title>
+    <title><?php echo $SITE_TAB_ADI; ?></title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/mdb.min.css">        <!-- Material Design Bootstrap MDB-->
     <link rel="stylesheet" href="bootstrap/css/style.css">          <!-- Özel CSS -->
@@ -42,19 +44,19 @@
 <body>
     <div class="wrapper display-hidden">
         <!-- SİDEBAR  -->
-        <nav id="sidebar" class="warning-color">
-            <div class="sidebar-header warning-color-dark">
-              <a href="index.php"><h3 class="font-weight-bold">AYSUBEY TEMA</h3></a>
+        <nav id="sidebar" class="<?php echo $menu_bg; ?>">
+            <div class="sidebar-header <?php echo $menu_baslik; ?>">
+              <a href="index.php"><h5 class="font-weight-bold"><?php echo $SITE_ADI; ?></h5></a>
             </div>
             <ul class="list-unstyled components">
                 <!-- MAKALE LİSTESİ -->
                 <li>
-                    <a href="index.php?sayfa=makaleListesi">Makaleler</a>
+                    <a href="index.php?sayfa=makaleListesi">Notlarım</a>
                 </li>
                 <!-- /MAKALE LİSTESİ -->
                 <!-- TOP-10 -->
                 <li>
-                    <a href="#makalelerTop10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Makaleler Top-10</a>
+                    <a href="#makalelerTop10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Top-10</a>
                     <ul class="collapse list-unstyled" id="makalelerTop10">
                         <?php MakaleleriListele(); ?>
                     </ul>
@@ -62,7 +64,7 @@
                 <!-- /TOP-10 -->
                 <!-- KATEGORİ LİSTESİ -->
                 <li>
-                    <a href="#kategoriler" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kategoriler</a>
+                    <a href="#kategoriler" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Not Kategorileri</a>
                     <ul class="collapse list-unstyled" id="kategoriler">
                         <?php KategorileriListele(); ?>
                     </ul>
@@ -99,7 +101,7 @@
 
                 <!-- KULLANICI MENÜSÜ -->
                 <li>
-                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-weight:bold; background:red;">Yönetim</a>
+                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle <?php echo $yonetim_baslik; ?>">Yönetim</a>
                     <ul class="collapse list-unstyled" style="font-weight:bold;" id="kullaniciMenusu">
                         <li>
                             <a href="index.php?sayfa=silinmismakaleler">Silinmiş Makaleler</a>
@@ -111,7 +113,7 @@
                             <a href="index.php?sayfa=makaleEkle">Makale Ekle</a>
                         </li>
                         <li>
-                            <a href="oturumuKapat.php" style="color:red;">Oturumu Kapat</a>
+                            <a href="oturumuKapat.php">Oturumu Kapat</a>
                         </li>
                     </ul>
                 </li>
@@ -124,7 +126,7 @@
         <!-- /SİDEBAR  -->
         <!-- İCERİK  -->
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark <?php echo $navbar_bg; ?>">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect">
                         <i class="white-text fas fa-align-left"></i>

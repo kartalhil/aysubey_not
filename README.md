@@ -47,3 +47,8 @@ TAMAMEN ÜCRETSİZ, KENDİNİZ GELİŞTİREBİLİR, ÇOĞALTABİLİR VE DAĞITAB
 - (X) Anasayfa için, her makaleye özgü bir resmi olacak,
 - (-) Makalelere resim eklerken konumlama olayı araştırılacak,
 - (-) Projede tekrar eden kodlar "function" olarak kullanılacak.
+
+# EMEĞİ GEÇENLER
+
+- Hasan Çiçek
+- Nuri Akman

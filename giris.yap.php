@@ -1,10 +1,11 @@
 <?php
 
   @session_start();
+  require("_ayarlar.php");
 
   if(isset($_POST["kullanici"])) {
 
-    if($_POST["kullanici"] == "KULLANICIADINIZ" and $_POST["parola"] == "PAROLANIZ") { // DEĞİŞECEKYER
+    if($_POST["kullanici"] == $kullanici and $_POST["parola"] == "$parola") {
       $_SESSION["GirisYapti"] = 1;
       $_SESSION['goster']     = '';
       $_SESSION['gizle']      = 'd-none';
