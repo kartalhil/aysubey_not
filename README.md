@@ -3,9 +3,8 @@
 ## KLONLADIKTAN SONRA YAPILACAKLAR!
 
 - Klonladıktan sonra mutlaka ilk yapmanız gereken terminal ekranında dizin içerisine geçerek, "composer update" komutunu göndermek olmalıdır.
-- giris.yap.php dosyasının 8. satırındaki "KULLANICIADINIZ" ve "PAROLANIZ" yazan yerleri kendinize göre değiştirin ve kimseye vermeyin.
-- index.php sayfasının 25. satırındaki "KULLANICIADINIZ" yazan yeri değiştirin.
-- Makale ekleme, güncelleme ve silme gibi işlemler için, kısacası yazar olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın.
+- ayarlar.php sayfasından kullanıcı adınız ve parolanızı değiştirin.
+- Yönetici olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın. 
 
 (Yani: aysubey/index.php?giris)
 
