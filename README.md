@@ -4,7 +4,7 @@
 
 - Klonladıktan sonra mutlaka ilk yapmanız gereken terminal ekranında dizin içerisine geçerek, "composer update" komutunu göndermek olmalıdır.
 - ayarlar.php sayfasından kullanıcı adınız ve parolanızı değiştirin.
-- Yönetici olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın. 
+- Yönetici olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın.
 
 (Yani: aysubey/index.php?giris)
 
@@ -44,6 +44,7 @@ TAMAMEN ÜCRETSİZ, KENDİNİZ GELİŞTİREBİLİR, ÇOĞALTABİLİR VE DAĞITAB
 - (X) Ziyaretçiler giriş ve kullanıcı menüsünü göremeyecek,
 - (X) Makale başlıklarından istediğimiz kadarı sol menüde görülebilecek,
 - (X) Anasayfa için, her makaleye özgü bir resmi olacak,
+- (-) Merkezi olarak renklendirilmesi sağlanacak,
 - (-) Makalelere resim eklerken konumlama olayı araştırılacak,
 - (-) Projede tekrar eden kodlar "function" olarak kullanılacak.
 

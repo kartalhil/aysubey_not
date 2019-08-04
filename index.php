@@ -20,11 +20,7 @@
     $YayinTarihi  = $Cevap[5];
     $KategorileriLinkleri = $Cevap[6];
   }
-/*
-  $goster = "";
-  $gizle  = "d-none";
-  $kullanici = "KULLANICIADINIZ";  // DEĞİŞECEKYER
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,12 +36,23 @@
     <link rel="stylesheet" href='prism/prism.css'>
     <link rel="stylesheet" href="simplemde/simplemde.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- background-color: red !important; -->
+
+  <style media="screen">
+    ul {border-bottom: <?php echo $renk9; ?> !important;}
+    ul li.active > a, a[aria-expanded="true"]{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
+    ul li a:hover{ background-color: <?php echo $renk6; ?> !important; color: white !important; }
+    ul li a:focus{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
+    ul ul a { background-color: <?php echo $renk1; ?> !important; color: white !important; }
+    ul ul a:hover{ background-color: <?php echo $renk6; ?> !important; color: white !important; }
+  </style>
+
 </head>
 <body>
     <div class="wrapper display-hidden">
         <!-- SİDEBAR  -->
-        <nav id="sidebar" class="<?php echo $menu_bg; ?>-color">
-            <div class="sidebar-header <?php echo $menu_baslik; ?>-color-dark">
+        <nav id="sidebar" class="warning-color" style="background-color: <?php echo $renk6; ?> !important">
+            <div class="sidebar-header warning-color-dark" style="background-color: <?php echo $renk9; ?> !important">
               <a href="index.php"><h5 class="font-weight-bold"><?php echo $SITE_ADI; ?></h5></a>
             </div>
             <ul class="list-unstyled components">
@@ -96,16 +103,13 @@
                 </div>
                 <!-- /KULLANICI GİRİŞİ -->
 
-                <?php } // if( isset($_GET['giris']) ) {
-                      if($_SESSION["GirisYapti"] == 1) { ?>
+                <?php }
+                  if($_SESSION["GirisYapti"] == 1) { ?>
 
                 <!-- KULLANICI MENÜSÜ -->
                 <li>
-                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle <?php echo $yonetim_baslik; ?>-color-dark">Yönetim</a>
+                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle warning-color-dark" style="background-color: <?php echo $renk7; ?> !important">Yönetim</a>
                     <ul class="collapse list-unstyled" id="kullaniciMenusu">
-                        <li>
-                            <a href="index.php?sayfa=silinmismakaleler">Silinmiş Makaleler</a>
-                        </li>
                         <li>
                             <a href="index.php?sayfa=makaleler">Makaleler</a>
                         </li>
@@ -119,16 +123,16 @@
                 </li>
                 <!-- /KULLANICI MENÜSÜ -->
 
-                <?php } // if($_SESSION["GirisYapti"] == 1) { ?>
+                <?php } ?>
 
             </ul>
         </nav>
         <!-- /SİDEBAR  -->
         <!-- İCERİK  -->
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-dark <?php echo $navbar; ?>-color-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark" style="background-color: <?php echo $renk9; ?> !important">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-outline-<?php echo $collapse_btn_outline ?> waves-effect">
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect" style="border: 2px solid <?php echo $renkoutline; ?> !important">
                         <i class="white-text fas fa-align-left"></i>
                         <span class="white-text">Menü</span>
                     </button>
@@ -234,11 +238,11 @@
                   break;
 
                 default:
-                  $arrMakaleler = glob("database/M*.md");               // Başı M ile başlayan md uzantılı dosyaları çektim.
-                  shuffle($arrMakaleler);                               // Gelen dosya yollarını rastgele karıştırdı.
+                  $arrMakaleler = glob("database/M*.md"); // Başı M ile başlayan md uzantılı dosyaları çektim.
+                  shuffle($arrMakaleler); // Gelen dosya yollarını rastgele karıştırdı.
 
                   for ($i=0; $i <3 ; $i++) {
-                    $Makale   = $arrMakaleler [$i];              // Dizinin sıradaki elemanını aldık.
+                    $Makale   = $arrMakaleler [$i]; // Dizinin sıradaki elemanını aldık.
                     $MakaleID = intval(mb_substr($Makale,10,4)); // İlk on karakterden itibaren dört karakteri tam sayı olarak aldık.
 
                     $Cevap = MakaleOku($MakaleID);
@@ -290,7 +294,7 @@
         <!-- /İCERİK  -->
     </div>
     <!-- FOOTER -->
-    <footer class="page-footer font-small mt-3 <?php echo $footer_bg; ?>-color">
+    <footer class="page-footer font-small mt-3 warning-color" style="<?php echo $renk; ?>">
       <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
         <a href="https://mdbootstrap.com/bootstrap-tutorial/"> aysubey.com</a>
       </div>
