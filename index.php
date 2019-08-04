@@ -44,8 +44,8 @@
 <body>
     <div class="wrapper display-hidden">
         <!-- SİDEBAR  -->
-        <nav id="sidebar" class="<?php echo $menu_bg; ?>">
-            <div class="sidebar-header <?php echo $menu_baslik; ?>">
+        <nav id="sidebar" class="<?php echo $menu_bg; ?>-color">
+            <div class="sidebar-header <?php echo $menu_baslik; ?>-color-dark">
               <a href="index.php"><h5 class="font-weight-bold"><?php echo $SITE_ADI; ?></h5></a>
             </div>
             <ul class="list-unstyled components">
@@ -101,8 +101,8 @@
 
                 <!-- KULLANICI MENÜSÜ -->
                 <li>
-                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle <?php echo $yonetim_baslik; ?>">Yönetim</a>
-                    <ul class="collapse list-unstyled" style="font-weight:bold;" id="kullaniciMenusu">
+                    <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle <?php echo $yonetim_baslik; ?>-color-dark">Yönetim</a>
+                    <ul class="collapse list-unstyled" id="kullaniciMenusu">
                         <li>
                             <a href="index.php?sayfa=silinmismakaleler">Silinmiş Makaleler</a>
                         </li>
@@ -126,9 +126,9 @@
         <!-- /SİDEBAR  -->
         <!-- İCERİK  -->
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-dark <?php echo $navbar_bg; ?>">
+            <nav class="navbar navbar-expand-lg navbar-dark <?php echo $navbar; ?>-color-dark">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect">
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-<?php echo $collapse_btn_outline ?> waves-effect">
                         <i class="white-text fas fa-align-left"></i>
                         <span class="white-text">Menü</span>
                     </button>
@@ -290,7 +290,7 @@
         <!-- /İCERİK  -->
     </div>
     <!-- FOOTER -->
-    <footer class="page-footer font-small warning-color-dark mt-3">
+    <footer class="page-footer font-small mt-3 <?php echo $footer_bg; ?>-color">
       <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
         <a href="https://mdbootstrap.com/bootstrap-tutorial/"> aysubey.com</a>
       </div>
