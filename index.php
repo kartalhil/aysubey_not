@@ -132,7 +132,7 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark" style="background-color: <?php echo $renk9; ?> !important">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect" style="border: 2px solid <?php echo $renkoutline; ?> !important">
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect" style="border: 1px solid <?php echo $renkoutline; ?> !important">
                         <i class="white-text fas fa-align-left"></i>
                         <span class="white-text">Menü</span>
                     </button>
