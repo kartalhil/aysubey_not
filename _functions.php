@@ -1,4 +1,6 @@
 <?php
+  require("_ayarlar.php");
+
   // DİZİLERİ EKRANDA GÖREREK KONTROL ETMEK İÇİN KULLANILIR.
   function DD($degisken) {
     echo "<pre>";
