@@ -2,6 +2,21 @@
 
 ## HAKKINDA
 
+Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb. paylaşmamız için tasarlanmıştır.
+
+- Makaleler MarkDown dosyalarında ayrı ayrı tutulur. Her yeni makalede oluşur. "database" klasöründe yer alır.
+- Her MarkDown dosyası oluşturulduğunda aynı anda oluşan bir sayaç dosyasında gösterim kayıtları tutulur. "database" klasöründe yer alır.
+- Anasayfada random üç makale gösterilir.
+- Makalelerde kullanılan resimler "img/makaleResim" klasöründe yer alır. Özetlerde kullanılan resimler ise "img/ozetResim" klasöründe yer alır.
+- Giriş bölümü sol menü içerisine gizlenmiştir.
+- İletişim sayfa bilgileri ayarlar sayfasından girilir.
+- Site içi arama mevcuttur.
+- Markdown dosyalarının gösterilebilmesi için "prism" kullanılmıştır.
+- Notlarım başlığı altında bütün makaleler gösterilir.
+- Her makale altında bulunan makale bilgisi bölümü aşağıdaki şekilde yazılmaktadır;
+  ::YAZAR ADI|TARİH|KATEGORİ1;KATEGORİ2
+- Kategoriler makale alt bilgisinde yazılan makale isimlerine göre oluşturulur.
+- Makaleyi ekleyin herşey kendiliğinden oluversin. Kolay gelsin...
 
 
 ## KLONLADIKTAN SONRA YAPILACAKLAR!
@@ -71,7 +86,8 @@ TAMAMEN ÜCRETSİZ, KENDİNİZ GELİŞTİREBİLİR, ÇOĞALTABİLİR VE DAĞITAB
 - (X) Anasayfa için, her makaleye özgü bir resmi olacak,
 - (-) Merkezi olarak renklendirilmesi sağlanacak,
 - (-) Makalelere resim eklerken konumlama olayı araştırılacak,
-- (-) Projede tekrar eden kodlar "function" olarak kullanılacak.
+- (-) Projede tekrar eden kodlar "function" olarak kullanılacak,
+- (-) Ayar sayfası için arayüz yapılacak.
 
 # EMEĞİ GEÇENLER
 
