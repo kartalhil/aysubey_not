@@ -173,7 +173,7 @@
               <td class='text-center'>$c</td>
               <td>$Baslik</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: $aktif !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: $aktif !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=$Baslik&id=$MakaleID' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=$Baslik&id=$MakaleID' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>

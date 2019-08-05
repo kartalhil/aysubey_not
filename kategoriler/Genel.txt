@@ -4,7 +4,7 @@
                                   <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 2&id=2'><img src='img/ozetResim/0002.jpg' alt='ÖRNEK MAKALE 2' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo  ?> !important;'>
                                      <h1>ÖRNEK MAKALE 2</h1>
 <p>Lorem Ipsum Nedir?</p>
 <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>
@@ -39,7 +39,7 @@
                                   <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 5&id=5'><img src='img/ozetResim/0005.jpg' alt='ÖRNEK MAKALE 5' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo  ?> !important;'>
                                      <h1>ÖRNEK MAKALE 5</h1>
 <p>Lorem Ipsum Nedir?</p>
 <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>

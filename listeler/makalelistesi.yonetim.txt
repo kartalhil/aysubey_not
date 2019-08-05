@@ -2,7 +2,7 @@
               <td class='text-center'>1</td>
               <td>ÖRNEK MAKALE 1</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: red !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: red !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=ÖRNEK MAKALE 1&id=1' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=ÖRNEK MAKALE 1&id=1' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
@@ -10,7 +10,7 @@
               <td class='text-center'>2</td>
               <td>ÖRNEK MAKALE 2</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: green !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: green !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=ÖRNEK MAKALE 2&id=2' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=ÖRNEK MAKALE 2&id=2' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
@@ -18,7 +18,7 @@
               <td class='text-center'>3</td>
               <td>ÖRNEK MAKALE 3</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: green !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: green !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=ÖRNEK MAKALE 3&id=3' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=ÖRNEK MAKALE 3&id=3' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
@@ -26,7 +26,7 @@
               <td class='text-center'>4</td>
               <td>ÖRNEK MAKALE 4</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: red !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: red !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=ÖRNEK MAKALE 4&id=4' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=ÖRNEK MAKALE 4&id=4' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
@@ -34,7 +34,7 @@
               <td class='text-center'>5</td>
               <td>ÖRNEK MAKALE 5</td>
               <td class='text-right'>
-                <a >  <i class='fa fa-ambulance' style='color: green !important;'></i></a>&nbsp;&nbsp;
+                <a >  <i class='fa fa-check-circle' style='color: green !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=ÖRNEK MAKALE 5&id=5' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=ÖRNEK MAKALE 5&id=5' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>

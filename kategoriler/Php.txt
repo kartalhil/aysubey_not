@@ -4,7 +4,7 @@
                                   <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 1&id=1'><img src='img/ozetResim/0001.jpg' alt='ÖRNEK MAKALE 1' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo  ?> !important;'>
                                      <h1>ÖRNEK MAKALE 1</h1>
 <p>Lorem Ipsum Nedir?</p>
 <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>
@@ -39,7 +39,7 @@
                                   <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 3&id=3'><img src='img/ozetResim/0003.jpg' alt='ÖRNEK MAKALE 3' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo  ?> !important;'>
                                      <h1>ÖRNEK MAKALE 3</h1>
 <p>Lorem Ipsum Nedir?</p>
 <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>
@@ -74,7 +74,7 @@
                                   <a href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 4&id=4'><img src='img/ozetResim/0004.jpg' alt='ÖRNEK MAKALE 4' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo  ?> !important;'>
                                      <h1>ÖRNEK MAKALE 4</h1>
 <p>Lorem Ipsum Nedir?</p>
 <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'le</p>
