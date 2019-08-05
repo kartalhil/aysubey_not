@@ -2,7 +2,7 @@
 
 ## HAKKINDA
 
-Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb. paylaşmamız için tasarlanmıştır.
+Bu proje Mustafa AKGÜL Özgür Yazılım Yaz Kampı 2018'de katılımcılara PHP ile Web Programlama 1. Düzey dersinde anlatılırken oluşmuştur. Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb. paylaşmamız için tasarlanmıştır.
 
 - Makaleler MarkDown dosyalarında ayrı ayrı tutulur. Her yeni makalede oluşur. "database" klasöründe yer alır.
 - Her MarkDown dosyası oluşturulduğunda aynı anda oluşan bir sayaç dosyasında gösterim kayıtları tutulur. "database" klasöründe yer alır.
@@ -21,7 +21,7 @@ Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb
 
 ## KLONLADIKTAN SONRA YAPILACAKLAR!
 
-- Klonladıktan sonra mutlaka ilk yapmanız gereken terminal ekranında dizin içerisine geçerek, "composer update" komutunu göndermek olmalıdır.
+- Klonladıktan sonra, beyza ekranla karşılaşırsanız ilk yapmanız gereken terminal ekranında proje dizini içerisine geçerek, "composer update" komutunu göndermek olmalıdır.
 - ayarlar.php sayfasından kullanıcı adınız ve parolanızı değiştirin.
 - Yönetici olarak girebilmek için; adres çubuğunda index.php den sonra ?giris yazarak sol menüde "login" ekranının görünür olmasını sağlayın.
 

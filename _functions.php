@@ -37,7 +37,7 @@
 
 
 
-    list($YazarAdi, $YayinTarihi, $Kategoriler) = explode("|", $YazarSatiri);
+    list($YazarAdi, $YayinTarihi, $Kategoriler, $durum) = explode("|", $YazarSatiri);
 
 
     $arrKategoriler = explode(";", $Kategoriler);

@@ -38,8 +38,8 @@
   info-dark: #0099CC
   info: #33B5E5                 hsla(196, 77%, 55%, 1.0)
   */
-
-  $renkoutline  = "hsla($hue, 77%, 55%, 1.0)";
+/*
+  $koyu  = "hsla($hue, 77%, 55%, 1.0)";
   $renk10       = "hsla($hue, 77%, 55%)";
   $renk9        = "hsla($hue, 77%, 55%, 0.9)";
   $renk8        = "hsla($hue, 77%, 55%, 0.8)";
@@ -50,6 +50,19 @@
   $renk3        = "hsla($hue, 77%, 55%, 0.3)";
   $renk2        = "hsla($hue, 77%, 55%, 0.2)";
   $renk1        = "hsla($hue, 77%, 55%, 0.1)";
-  $body         = "hsla($hue, 77%, 55%, 0.1)";
+  $body         = "hsla($hue, 77%, 55%, 0.1)";*/
+
+  $koyu  = "hsla($hue, 10%, 40%)";
+  $renk10       = "hsla($hue, 50%, 50%)";
+  $renk9        = "hsla($hue, 55%, 55%)";
+  $renk8        = "hsla($hue, 60%, 60%)";
+  $renk7        = "hsla($hue, 65%, 65%)";
+  $renk6        = "hsla($hue, 70%, 75%)";
+  $renk5        = "hsla($hue, 75%, 80%)";
+  $renk4        = "hsla($hue, 80%, 82%)";
+  $renk3        = "hsla($hue, 85%, 85%)";
+  $renk2        = "hsla($hue, 90%, 87%)";
+  $renk1        = "hsla($hue, 95%, 80%)";
+  $body         = "hsla($hue, 100%, 95%)";
 
  ?>

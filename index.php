@@ -41,11 +41,11 @@
   <style media="screen">
     body{background-color: <?php echo $body; ?> !important;}
     ul {border-bottom: <?php echo $renk10; ?> !important;}
-    ul li.active > a, a[aria-expanded="true"]{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
-    ul li a:hover{ background-color: <?php echo $renk6; ?> !important; color: white !important; }
-    ul li a:focus{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
-    ul ul a { background-color: <?php echo $renk1; ?> !important; color: white !important; }
-    ul ul a:hover{ background-color: <?php echo $renk6; ?> !important; color: white !important; }
+    ul li.active > a, a[aria-expanded="true"]{ background-color: <?php echo $renk8; ?> !important; color: <?php echo $koyu ?> !important; }
+    ul li a:hover{ background-color: <?php echo $renk6; ?> !important; color: <?php echo $koyu ?> !important; }
+    ul li a:focus{ background-color: <?php echo $renk8; ?> !important; color: <?php echo $renk1 ?> !important; }
+    ul ul a { background-color: <?php echo $renk1; ?> !important; color: <?php echo $koyu ?> !important; }
+    ul ul a:hover{ background-color: <?php echo $renk6; ?> !important; color: <?php echo $koyu ?> !important; }
   </style>
 
 </head>
@@ -207,7 +207,7 @@
                 case 'kategori':
                   $KATEGORI_ADI = $_GET["kategoriadi"];
                   if(file_exists("kategoriler/$KATEGORI_ADI.txt")) {
-                    echo "<div class='card card-header warning-color mb-2'><b>$KATEGORI_ADI KATEGORİSİNDEKİ MAKALELER...</b></div>";
+                    echo "<div class='card card-header warning-color mb-2' style='background-color: $renk7 !important'><b>$KATEGORI_ADI KATEGORİSİNDEKİ MAKALELER...</b></div>";
                     include("kategoriler/$KATEGORI_ADI.txt");
                   } else {
                     echo "<h2 style='color:red;'>$KATEGORI_ADI Kategorisinde yazı bulunmamaktadır...</h2>";
@@ -296,8 +296,7 @@
     </div>
     <!-- FOOTER -->
     <footer class="page-footer font-small mt-3 warning-color" style="background-color: <?php echo $renk10; ?> !important">
-      <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> aysubey.com</a>
+      <div class="footer-copyright text-center py-3">2018 © <a href="https://aysubey.com"> aysubey.com</a>
       </div>
     </footer>
     <!-- /FOOTER -->
