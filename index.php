@@ -264,6 +264,14 @@
                     $ResimAdi             = $Cevap[9];
                     $Durum                = $Cevap[10];
 
+                    if ($Durum == 0) {
+                      $aktif = "Pasif";
+                      $aktifx = "red";
+                    } else {
+                      $aktif = "Aktif";
+                      $aktifx = "green";
+                    }
+
                     echo "<div class='card mb-3 ozet'>
                             <div class='row clearfix'>
                               <div class='col-md-4 ozet_img' title='Makalenin Devamı...'>
@@ -284,6 +292,10 @@
                                       <a href='#'><i class='fas fa-align-justify text-success'></i></a>
                                       <span style='font-size:70%;'>
                                       $KategorileriLinkleri
+                                      </span>&nbsp;&nbsp;&nbsp;
+                                      <a href='#'><i class='fas fa-check-circle text-success' style='color:$aktifx !important;'></i></a>
+                                      <span style='font-size:70%;'>
+                                      $aktif
                                       </span>&nbsp;&nbsp;&nbsp;
                                       <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'>
                                           Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>

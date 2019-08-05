@@ -246,7 +246,7 @@
                                          <span style='font-size:70%;'>
                                          $KATEGORI_ADI
                                          </span>&nbsp;&nbsp;&nbsp;
-                                         <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                         <a href='#'><i class='fas fa-check-circle text-success'></i></a>
                                          <span style='font-size:70%;'>
                                          $Durum
                                          </span>&nbsp;&nbsp;&nbsp;
