@@ -265,40 +265,41 @@
                     $Durum                = $Cevap[10];
 
                     if ($Durum == 0) {
-                      $aktif = "Pasif";
                       $aktifx = "red";
+                      $aktify = "danger";
+                      $arkaplan = "#FFCCFF";
                     } else {
-                      $aktif = "Aktif";
                       $aktifx = "green";
+                      $aktify = "success";
+                      $arkaplan = "";
                     }
 
-                    echo "<div class='card mb-3 ozet'>
+                    echo "<div class='card mb-3 ozet' style='background-color: $arkaplan !important;'>
                             <div class='row clearfix'>
                               <div class='col-md-4 ozet_img' title='Makalenin Devamı...'>
                                 <a href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'><img src='$ResimAdi' alt='$Baslik' /></a>
                               </div>
                               <div class='col-md-8'>
-                                <div class='card-body' style='background-color: <?php echo $renk1 ?> !important;'>
+                                <div class='card-body'>
                                    $IcerikOzeti
                                   <p align='right'>
-                                      <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success'></i></a>
+                                      <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success' style='color:$aktifx !important;'></i></a>
                                       <span style='font-size:70%;'>
                                       $YazarAdi
                                       </span>&nbsp;&nbsp;&nbsp;
-                                      <a href='#'><i class='fas fa-clock text-success'></i></a>
+                                      <a href='#'><i class='fas fa-clock text-success' style='color:$aktifx !important;'></i></a>
                                       <span style='font-size:70%;'>
                                       $YayinTarihi
                                       </span>&nbsp;&nbsp;&nbsp;
-                                      <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                      <a href='#'><i class='fas fa-align-justify text-success' style='color:$aktifx !important;'></i></a>
                                       <span style='font-size:70%;'>
                                       $KategorileriLinkleri
                                       </span>&nbsp;&nbsp;&nbsp;
                                       <a href='#'><i class='fas fa-check-circle text-success' style='color:$aktifx !important;'></i></a>
                                       <span style='font-size:70%;'>
-                                      $aktif
                                       </span>&nbsp;&nbsp;&nbsp;
-                                      <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'>
-                                          Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>
+                                      <a class='btn btn-sm btn-outline-$aktify' href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID' style='color:$aktifx !important;'>
+                                          Devamı &nbsp;<i class='fas fa-angle-double-right' style='color:$aktifx !important;'></i><i class='fas fa-angle-double-right' style='color:$aktifx !important;'></i>
                                       </a>
                                    </p>
                                 </div>
