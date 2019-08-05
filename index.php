@@ -39,7 +39,8 @@
     <!-- background-color: red !important; -->
 
   <style media="screen">
-    ul {border-bottom: <?php echo $renk9; ?> !important;}
+    body{background-color: <?php echo $body; ?> !important;}
+    ul {border-bottom: <?php echo $renk10; ?> !important;}
     ul li.active > a, a[aria-expanded="true"]{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
     ul li a:hover{ background-color: <?php echo $renk6; ?> !important; color: white !important; }
     ul li a:focus{ background-color: <?php echo $renk8; ?> !important; color: white !important; }
@@ -52,7 +53,7 @@
     <div class="wrapper display-hidden">
         <!-- SİDEBAR  -->
         <nav id="sidebar" class="warning-color" style="background-color: <?php echo $renk6; ?> !important">
-            <div class="sidebar-header warning-color-dark" style="background-color: <?php echo $renk9; ?> !important">
+            <div class="sidebar-header warning-color-dark" style="background-color: <?php echo $renk10; ?> !important">
               <a href="index.php"><h5 class="font-weight-bold"><?php echo $SITE_ADI; ?></h5></a>
             </div>
             <ul class="list-unstyled components">
@@ -130,7 +131,7 @@
         <!-- /SİDEBAR  -->
         <!-- İCERİK  -->
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark" style="background-color: <?php echo $renk9; ?> !important">
+            <nav class="navbar navbar-expand-lg navbar-dark warning-color-dark" style="background-color: <?php echo $renk10; ?> !important">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-outline-warning waves-effect" style="border: 1px solid <?php echo $renkoutline; ?> !important">
                         <i class="white-text fas fa-align-left"></i>
@@ -294,7 +295,7 @@
         <!-- /İCERİK  -->
     </div>
     <!-- FOOTER -->
-    <footer class="page-footer font-small mt-3 warning-color" style="background-color: <?php echo $renk9; ?> !important">
+    <footer class="page-footer font-small mt-3 warning-color" style="background-color: <?php echo $renk10; ?> !important">
       <div class="footer-copyright text-center py-3">© 2018 Yasal Hakkı:
         <a href="https://mdbootstrap.com/bootstrap-tutorial/"> aysubey.com</a>
       </div>

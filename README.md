@@ -1,6 +1,8 @@
 # AYSUBEY NOTLARIM v1.0.0
 
-Denemeden önce mutlaka okuyun.
+## HAKKINDA
+
+
 
 ## KLONLADIKTAN SONRA YAPILACAKLAR!
 

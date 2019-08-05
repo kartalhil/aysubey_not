@@ -1,12 +1,10 @@
-<div class='row iletisim'>
-              <div class='col-sm-12 col-lg-2 my-1'>
-              </div>
-              <div class='col-sm-12 col-md-6 col-lg-4 my-1'>
+<div class='row iletisim mt-5'>
+              <div class='col-sm-12 col-md-6 col-lg-4 offset-sm-2'>
                 <div class='card border-2'>
                    <div class='card-body text-center'>
                      <i class='fa fa-phone fa-5x mb-3' aria-hidden='true'></i>
-                     <h4 class='text-uppercase mb-5'>Arayın</h4>
-                     <p>+90 530 303 0303</p>
+                     <h4 class='text-uppercase mb-5'>Telefon</h4>
+                     <p> <?php echo $telefon; ?> </p>
                    </div>
                  </div>
               </div>
@@ -15,7 +13,7 @@
                   <div class='card-body text-center'>
                     <i class='fa fa-globe fa-5x mb-3' aria-hidden='true'></i>
                     <h4 class='text-uppercase mb-5'>E-Posta</h4>
-                    <p><a href='mailto:badboy714@gmail.com'>mail@gmail.com</a></p>
+                    <p><a href='mailto:badboy714@gmail.com'> <?php echo $ePosta; ?> </a></p>
                   </div>
                 </div>
               </div>
@@ -27,7 +25,7 @@
                 <div class='card border-2'>
                    <div class='card-body text-center'>
                      <h4 class='text-uppercasex'>
-                       Sevgili arkadaşlar, sitede yayımlanmasını istediğiniz konular, istek ve şikayetler ve yaptıysak hatalarımız hakkında bana ulaşabilirsiniz.
+                       <?php echo $iletisimNot; ?>
                      </h4>
                    </div>
                  </div>
