@@ -24,7 +24,7 @@
                 <a href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'><img src='$ResimAdi' alt='$Baslik' /></a>
               </div>
               <div class='col-md-8'>
-                <div class='card-body'>
+                <div class='card-body' style='background-color: <?php echo $renk1 ?> !important;'>
                    $IcerikOzeti
                   <p align='right'>
                       <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success'></i></a>

@@ -35,16 +35,12 @@
 
 ?>
 
-<!--  Form tagına nasıl eklenecek?
-      enctype="multipart/form-data"
--->
-
-        <div class="card p-3 mb-2 font-weight-bold warning-color">YENİ MAKALE EKLE</div>
-        <div class="card card-body" style="background:#fff9c4;">
+        <div class="card p-3 mb-2 font-weight-bold warning-color" style="background-color: <?php echo $renk7; ?> !important;">YENİ İÇERİK EKLE</div>
+        <div class="card card-body"  style="background-color: <?php echo $renk1; ?> !important;">
           <form method="post">
-            <input class="mb-2" type="text" name="YeniAd" value="" placeholder="Yeni Resim Adı...">
+            <input class="mb-2" type="text" name="YeniAd" value="" placeholder="Yeni Resim Adını Giriniz...">
             <input class="mb-2" type="file" name="Dosya">
-            <input class="mb-2" type="submit" value="Makale Ekle">
+            <input class="mb-2" type="submit" value="İçerik Ekle">
             <textarea class="p-3" name="Editor" id="SME"></textarea>
           </form>
         </div>

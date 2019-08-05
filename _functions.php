@@ -37,8 +37,7 @@
 
 
 
-    list($YazarAdi, $YayinTarihi, $Kategoriler, $durum) = explode("|", $YazarSatiri);
-
+    list($YazarAdi, $YayinTarihi, $Kategoriler, $Durum) = explode("|", $YazarSatiri);
 
     $arrKategoriler = explode(";", $Kategoriler);
 
@@ -60,7 +59,6 @@
 
     $Icerik = $Parsedown->text($Icerik);  // Makale içeriği html olarak çevriliyor.
 
-
     $KontrolResmi = sprintf("img/ozetResim/%04d.jpg", $ID);
     $ResimAdi  = (file_exists($KontrolResmi)) ? $KontrolResmi : "img/makaleResim/aysubey.jpg";
 
@@ -74,6 +72,7 @@
     $Cevap[7] = $Kategoriler;
     $Cevap[8] = $IcerikOzeti;
     $Cevap[9] = $ResimAdi;
+    $Cevap[10] = $Durum; // Aktif-Pasif (1-0)
 
     return $Cevap;                             // Elemanları dışarı çıkartıyoruz.
   }
@@ -95,6 +94,7 @@
       $YayinTarihi      = $Cevap[5];
       $KategoriLinkleri = $Cevap[6];
       $Kategoriler      = $Cevap[7];
+
       $konum = strpos($Icerik, $BUL);
       // echo "$BUL -- $MakaleID -- $konum<br>";
       if(! stripos($Icerik, $BUL) === false) {
@@ -115,7 +115,6 @@
     }
 
   }
-
 
   function MakaleListesiHazirla($a = 'database/M*.md'){
 
@@ -146,6 +145,7 @@
       $YayinTarihi      = $Cevap[5];
       $KategoriLinkleri = $Cevap[6];
       $Kategoriler      = $Cevap[7]; // Örnek: PHP;CSS;HTML
+      $Durum            = $Cevap[10];
 
       $arrKATs = explode(";", $Kategoriler);
       foreach ($arrKATs as $key => $value) {
@@ -162,11 +162,18 @@
           <a href='?sayfa=icerik&makale=$Baslik&id=$MakaleID'>$Baslik</a>
         </li>";
 
+        if ($Durum == 0) {
+          $aktif  = "red";
+        } else {
+          $aktif  = "green";
+        }
+
       $c++;
       $ICERIKYONETIM .= "<tr>
               <td class='text-center'>$c</td>
               <td>$Baslik</td>
               <td class='text-right'>
+                <a >  <i class='fa fa-ambulance' style='color: $aktif !important;'></i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=icerik&makale=$Baslik&id=$MakaleID' alt='GÖRÜNTÜLE'>  <i class='fa fa-eye'>   </i></a>&nbsp;&nbsp;
                 <a href='index.php?sayfa=makaleDuzenle&makale=$Baslik&id=$MakaleID' alt='DÜZENLE'>    <i class='fa fa-edit'>  </i></a>&nbsp;&nbsp;
                 <a href='#' alt='SİL'>        <i class='fa fa-trash'> </i></a>&nbsp;&nbsp;&nbsp;</td>
@@ -216,6 +223,7 @@
         $Kategoriler      = $Cevap[7];
         $IcerikOzeti      = $Cevap[8];
         $ResimAdi         = $Cevap[9];
+        $Durum            = $Cevap[10];
 
         $ResimliLinkler .= "<div class='card mb-3 ozet'>
                               <div class='row clearfix'>
@@ -223,7 +231,7 @@
                                   <a href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'><img src='$ResimAdi' alt='$Baslik' /></a>
                                 </div>
                                 <div class='col-md-8'>
-                                  <div class='card-body'>
+                                  <div class='card-body' style='background-color: <?php echo $renk1 ?> !important;'>
                                      $IcerikOzeti
                                      <p align='right'>
                                          <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success'></i></a>
@@ -237,6 +245,10 @@
                                          <a href='#'><i class='fas fa-align-justify text-success'></i></a>
                                          <span style='font-size:70%;'>
                                          $KATEGORI_ADI
+                                         </span>&nbsp;&nbsp;&nbsp;
+                                         <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         $Durum
                                          </span>&nbsp;&nbsp;&nbsp;
                                          <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'>
                                              Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>

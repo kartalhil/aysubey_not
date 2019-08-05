@@ -19,6 +19,8 @@
     $YazarAdi  = $Cevap[4];
     $YayinTarihi  = $Cevap[5];
     $KategorileriLinkleri = $Cevap[6];
+    $Durum = $Cevap[10];
+
   }
 
 ?>
@@ -90,7 +92,7 @@
                 <!-- KULLANICI GİRİŞİ -->
                 <div class="card mb-2 kapi">
                   <h6 class="card-header warning-color-dark white-text text-center py-2"><strong>Kullanıcı Girişi</strong></h6>
-                  <div class="card-body px-lg-2">
+                  <div class="card-body px-lg-2" style='background-color: <?php echo $renk1 ?> !important;'>
                     <form class="text-center" style="color: #757575;" action="giris.yap.php" method="POST">
                       <div class="md-form">
                         <input type="text" class="form-control" name="kullanici" placeholder="E-Posta" autocomplete="off">
@@ -112,10 +114,10 @@
                     <a href="#kullaniciMenusu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle warning-color-dark" style="background-color: <?php echo $renk7; ?> !important">Yönetim</a>
                     <ul class="collapse list-unstyled" id="kullaniciMenusu">
                         <li>
-                            <a href="index.php?sayfa=makaleler">Makaleler</a>
+                            <a href="index.php?sayfa=icerikListele">İçerik Listele</a>
                         </li>
                         <li>
-                            <a href="index.php?sayfa=makaleEkle">Makale Ekle</a>
+                            <a href="index.php?sayfa=icerikEkle">İçerik Ekle</a>
                         </li>
                         <li>
                             <a href="oturumuKapat.php">Oturumu Kapat</a>
@@ -164,8 +166,8 @@
               $sayfa = $_GET["sayfa"];
 
               switch ($sayfa) {
-                case 'makaleler':
-                  echo "<h6 class='card-header warning-color white-text py-2'>Aysubey Makaleler</h6>";
+                case 'icerikListele':
+                  echo "<h6 class='card-header warning-color white-text py-2' style='background-color: $renk7 !important'>$SITE_ADI Listesi</h6>";
                   echo "<table class='table table-hover table-sm'>
                           <thead>
                             <th class='text-center'>Sıra</th>
@@ -186,7 +188,7 @@
                   require('makaleDuzenle.php');
                   break;
 
-                case 'makaleEkle':
+                case 'icerikEkle':
                   require('makaleEkle.php');
                   break;
 
@@ -198,7 +200,6 @@
                 case 'iletisim':
                   require('iletisim.php');
                   break;
-                  break;
 
                 case 'hakkimda':
                   require('hakkimda.php');
@@ -207,7 +208,7 @@
                 case 'kategori':
                   $KATEGORI_ADI = $_GET["kategoriadi"];
                   if(file_exists("kategoriler/$KATEGORI_ADI.txt")) {
-                    echo "<div class='card card-header warning-color mb-2' style='background-color: $renk7 !important'><b>$KATEGORI_ADI KATEGORİSİNDEKİ MAKALELER...</b></div>";
+                    echo "<div class='card card-header warning-color mb-2' style='background-color: $renk7 !important'><b>$KATEGORI_ADI Kategorisindeki Makaleler</b></div>";
                     include("kategoriler/$KATEGORI_ADI.txt");
                   } else {
                     echo "<h2 style='color:red;'>$KATEGORI_ADI Kategorisinde yazı bulunmamaktadır...</h2>";
@@ -224,7 +225,7 @@
                   </div>";
                   if($_SESSION["GirisYapti"] != 1) $EDIT_LINK = "";
                   echo "<div class='card'>
-                          <div class='card-body icerik'>
+                          <div class='card-body icerik' style='background-color: <?php echo $renk1 ?> !important;'>
                             $EDIT_LINK
                             $Icerik
                             <hr>
@@ -232,8 +233,12 @@
                             <p>";
                   if(trim($YazarAdi) <> "") echo "<div class='row'><div><span style='margin-right: 20px;'><b>YAZAR:</b> $YazarAdi</span></div>";
                   if(trim($YayinTarihi) <> "") echo "<div><span style='margin-right: 20px;'><b>TARİH:</b> $YayinTarihi</span></div>";
-                  if(trim($KategorileriLinkleri) <> "") echo "<div><span style='margin-right: 20px;'><b>KATEGORİ:</b> $KategorileriLinkleri</span></div></div>";
-                  echo      "</p>
+                  if(trim($KategorileriLinkleri) <> "") echo "<div><span style='margin-right: 20px;'><b>KATEGORİ:</b> $KategorileriLinkleri</span></div>";
+                  if(trim($Durum) <> "") echo "<div><span style='margin-right: 20px;'><b>DURUM:</b>";
+                  echo $Durum == 1 ? " Yayında" : " Yayında değil!";
+
+                  echo      "</span></div></div>
+                              </p>
                           </div>
                         </div>";
                   break;
@@ -257,6 +262,7 @@
                     $KategorileriLinkleri = $Cevap[6];
                     $IcerikOzeti          = $Cevap[8];
                     $ResimAdi             = $Cevap[9];
+                    $Durum                = $Cevap[10];
 
                     echo "<div class='card mb-3 ozet'>
                             <div class='row clearfix'>
@@ -264,7 +270,7 @@
                                 <a href='index.php?sayfa=icerik&makele=$Baslik&id=$MakaleID'><img src='$ResimAdi' alt='$Baslik' /></a>
                               </div>
                               <div class='col-md-8'>
-                                <div class='card-body'>
+                                <div class='card-body' style='background-color: <?php echo $renk1 ?> !important;'>
                                    $IcerikOzeti
                                   <p align='right'>
                                       <a href='index.php?sayfa=hakkimda'><i class='fas fa-address-card text-success'></i></a>

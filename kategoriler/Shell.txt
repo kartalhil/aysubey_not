@@ -21,6 +21,11 @@
                                          <span style='font-size:70%;'>
                                          Shell
                                          </span>&nbsp;&nbsp;&nbsp;
+                                         <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         0
+
+                                         </span>&nbsp;&nbsp;&nbsp;
                                          <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 1&id=1'>
                                              Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>
                                          </a>

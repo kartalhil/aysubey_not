@@ -62,7 +62,7 @@
   $renk4        = "hsla($hue, 80%, 82%)";
   $renk3        = "hsla($hue, 85%, 85%)";
   $renk2        = "hsla($hue, 90%, 87%)";
-  $renk1        = "hsla($hue, 95%, 80%)";
+  $renk1        = "hsla($hue, 97%, 93%)";
   $body         = "hsla($hue, 100%, 95%)";
 
  ?>

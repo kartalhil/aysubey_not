@@ -21,6 +21,11 @@
                                          <span style='font-size:70%;'>
                                          Markdown
                                          </span>&nbsp;&nbsp;&nbsp;
+                                         <a href='#'><i class='fas fa-align-justify text-success'></i></a>
+                                         <span style='font-size:70%;'>
+                                         1
+
+                                         </span>&nbsp;&nbsp;&nbsp;
                                          <a class='btn btn-sm btn-outline-success' href='index.php?sayfa=icerik&makele=ÖRNEK MAKALE 3&id=3'>
                                              Devamı &nbsp;<i class='fas fa-angle-double-right'></i><i class='fas fa-angle-double-right'></i>
                                          </a>

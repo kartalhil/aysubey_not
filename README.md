@@ -2,7 +2,7 @@
 
 ## HAKKINDA
 
-Bu proje Mustafa AKGÜL Özgür Yazılım Yaz Kampı 2018'de katılımcılara PHP ile Web Programlama 1. Düzey dersinde anlatılırken oluşmuştur. Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb. paylaşmamız için tasarlanmıştır.
+Bu proje Mustafa AKGÜL Özgür Yazılım Yaz Kampı 2018 PHP ile Web Programlama 1. Düzey dersinde metin dosyalarından veri çekme konusu anlatılırken oluşmuştur. Veritabanı kullanmadan notlarımızı, blog yazılarımızı, makalelerimizi vb. içeriklerimizi paylaşmamız için tasarlanmıştır.
 
 - Makaleler MarkDown dosyalarında ayrı ayrı tutulur. Her yeni makalede oluşur. "database" klasöründe yer alır.
 - Her MarkDown dosyası oluşturulduğunda aynı anda oluşan bir sayaç dosyasında gösterim kayıtları tutulur. "database" klasöründe yer alır.
@@ -72,22 +72,22 @@ TAMAMEN ÜCRETSİZ, KENDİNİZ GELİŞTİREBİLİR, ÇOĞALTABİLİR VE DAĞITAB
 
 ***Not: (X) olan yerler bitmiş, (-) olan yerlerde yapılması düşünülmektedir.***
 
-- (X) Material Design Bootstrap (MDB) kullanılacak,
-- (X) Herhangi bir veritabanı kullanılmıyacak,
-- (X) Sadece her makale için ayrı bir dosya oluşturulacak,
-- (X) Oluşturulan dosyalar "MarkDown" olacak,
-- (X) Markdown olarak yazılan makaleler html formatına çevrilecek,
-- (X) Makalelerin okunma takibi, text dosyası ile yapılacak,
-- (X) Anasayfada istediğimiz kadar makaleden özet gösterilebilecek,
-- (X) Makale eklemek için yönetici girişi olacak,
-- (X) Kullanıcı menüsü olacak,
-- (X) Ziyaretçiler giriş ve kullanıcı menüsünü göremeyecek,
-- (X) Makale başlıklarından istediğimiz kadarı sol menüde görülebilecek,
-- (X) Anasayfa için, her makaleye özgü bir resmi olacak,
-- (-) Merkezi olarak renklendirilmesi sağlanacak,
-- (-) Makalelere resim eklerken konumlama olayı araştırılacak,
-- (-) Projede tekrar eden kodlar "function" olarak kullanılacak,
-- (-) Ayar sayfası için arayüz yapılacak.
+- (100%) Material Design Bootstrap (MDB) kullanılacak,
+- (100%) Herhangi bir veritabanı kullanılmıyacak,
+- (100%) Sadece her makale için ayrı bir dosya oluşturulacak,
+- (100%) Oluşturulan dosyalar "MarkDown" olacak,
+- (100%) Markdown olarak yazılan makaleler html formatına çevrilecek,
+- (100%) Makalelerin okunma takibi, text dosyası ile yapılacak,
+- (100%) Anasayfada istediğimiz kadar makaleden özet gösterilebilecek,
+- (100%) Makale eklemek için yönetici girişi olacak,
+- (100%) Kullanıcı menüsü olacak,
+- (100%) Ziyaretçiler giriş ve kullanıcı menüsünü göremeyecek,
+- (100%) Makale başlıklarından istediğimiz kadarı sol menüde görülebilecek,
+- (100%) Anasayfa için, her makaleye özgü bir resmi olacak,
+- (70%) Merkezi olarak renklendirilmesi sağlanacak,
+- (0%) Makalelere resim eklerken konumlama olayı araştırılacak,
+- (0%) Projede tekrar eden kodlar "function" olarak kullanılacak,
+- (0%) Ayar sayfası için arayüz yapılacak.
 
 # EMEĞİ GEÇENLER
 
